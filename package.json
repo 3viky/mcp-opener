@@ -1,0 +1,56 @@
+{
+  "name": "@3viky/mcp-opener",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for opening files, folders, and browsers across different OS environments",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "mcp-opener": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "chmod +x dist/index.js",
+    "watch": "tsc --watch",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "opener",
+    "xdg-open",
+    "file-manager",
+    "browser",
+    "flatpak",
+    "claude-code"
+  ],
+  "author": "3viky",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3viky/mcp-opener.git"
+  },
+  "bugs": {
+    "url": "https://github.com/3viky/mcp-opener/issues"
+  },
+  "homepage": "https://github.com/3viky/mcp-opener#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.3",
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.24",
+    "@vitest/coverage-v8": "^2.1.5",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.5"
+  }
+}
