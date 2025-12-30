@@ -52,5 +52,10 @@
     "@vitest/coverage-v8": "^2.1.5",
     "typescript": "^5.9.3",
     "vitest": "^2.1.5"
+  },
+  "_": {
+    "registry": "github",
+    "publish": false,
+    "build": true
   }
 }
